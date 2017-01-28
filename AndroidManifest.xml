@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dolist"
+    android:versionCode="32"
+    android:versionName="3.2 Final 20161226" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	<uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.dolist.MainActivity"
+            android:label="待办事项"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.example.dolist.Login"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.example.dolist.HelloActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.dolist.Register"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.dolist.Calendars"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.dolist.List"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.dolist.About"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity android:name="com.example.dolist.ClockActivity" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+		<activity android:name="com.example.dolist.EditActivity"
+		    android:theme="@android:style/Theme.NoTitleBar"
+		    ></activity>
+        　	<activity android:name="com.example.dolist.Festival"></activity>
+		<activity android:name="com.example.dolist.FestivalClockActivity"
+		    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+		    ></activity>
+		<activity 
+		    android:name="com.example.dolist.FestivalEditActivity"
+		    android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name="com.example.dolist.lostpass"></activity>
+    </application>
+
+</manifest>

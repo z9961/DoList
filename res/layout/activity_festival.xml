@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Festivalll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/listback" >
+
+        <ListView
+            android:id="@+id/Festivalview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_weight="1" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6.6"
+        android:background="@drawable/down_out" >
+
+        <ImageButton
+            android:id="@+id/btn_Festivalcel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@android:color/holo_blue_light"
+            android:scaleType="centerInside"
+            android:src="@drawable/cal" />
+
+        <EditText
+            android:id="@+id/editFestivalText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:background="#DCDCDC"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="准备添加什么节日？"
+            android:textSize="20sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/btn_Festivaladd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@android:color/holo_blue_light"
+            android:scaleType="centerInside"
+            android:src="@drawable/plus" />
+    </LinearLayout>
+
+</LinearLayout>

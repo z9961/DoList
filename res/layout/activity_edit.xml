@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:background="#DCDCDC"
+        
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/edittime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="TextView"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/editalarm"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="6"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/alarm" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/listback"
+        android:editable="true"
+        android:ems="10"
+        android:gravity="start"
+        android:textSize="40sp" />
+
+</LinearLayout>
